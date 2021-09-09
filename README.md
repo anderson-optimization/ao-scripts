@@ -28,7 +28,7 @@ cd $HOME
 
 # clone our starter repo
 git clone https://github.com/anderson-optimization/ao-scripts
-
+cd ao-scripts
 ```
 
 #### Get libraries from AO contact
