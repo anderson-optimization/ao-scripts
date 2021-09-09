@@ -1,6 +1,6 @@
 
 
-# AO Scripts
+# ![ao logo](https://andersonopt.com/assets/img/logo.png) AO Scripts
 
 AO Scripts is a starter repo to help utilize `ao-lib` and `ao-cli` for programmatic access to AO resources.  
 
