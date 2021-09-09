@@ -1,0 +1,19 @@
+{
+  "name": "cli-setup",
+  "version": "1.0.0",
+  "description": "Ao Cli is used to authenticate programmatic access to our app and delegate those permissions to things such as node/js scripts.",
+  "main": "index.js",
+  "scripts": {
+    "user-info": "node src/user-info.js",
+    "fetch-projects": "node src/fetch-projects.js",
+    "login": "ao auth login",
+    "logout": "ao auth logout"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anderson-optimization/ao-cli": "file:anderson-optimization-ao-cli-1.0.3.tgz",
+    "@anderson-optimization/ao-lib": "file:anderson-optimization-ao-lib-2.0.4.tgz",
+    "lodash": "^4.17.21"
+  }
+}
