@@ -34,7 +34,7 @@ cd ao-scripts
 
 #### Get libraries from AO contact
 
-- You should receive `ao-lib-v...` and `ao-cli-v...`
+- You should receive `anderson-optimization-ao-lib-v...` and `anderson-optimization-ao-cli-v...`
 
 ```
 # Make sure library files you received are in the same directory
