@@ -1,5 +1,5 @@
 
-<img src="https://andersonopt.com/assets/img/logo.png" width="150">
+<img src="https://andersonopt.com/assets/img/logo.png" width="75">
 
 #  AO Scripts
 
