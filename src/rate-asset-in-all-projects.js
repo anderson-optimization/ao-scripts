@@ -27,10 +27,16 @@ async function main(){
     try{
         const [bin,script,assetRn, rating] = process.argv;
         aoLib = await aoCli.getAoLib();
-        const userState = await aoLib.$user.getUserState();
-        const tid = userState.team; // this is the currently select team similar to the UI
-        console.log(`Searching all projects in current team=${tid} for assetRn=${assetRn}`)
-
+        if(!assetRn){
+            console.error('No asset rn supplied');
+            process.exit(1);
+        }
+        const {
+            id,
+            tid,
+            resource
+        } = aoLib.util.getRnInfo(assetRn);
+        console.log(`Searching all projects in team=${tid} for assetRn=${assetRn}`)
         const projects = await aoLib.resource.project.list({limitTo:1000,tid});
 
         // Loop through each project and search for assetref
