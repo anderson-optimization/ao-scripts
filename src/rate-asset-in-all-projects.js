@@ -34,6 +34,7 @@ async function main(){
         const projects = await aoLib.resource.project.list({limitTo:1000,tid});
 
         // Loop through each project and search for assetref
+        // update project with rating if rating is supplied
         for (const [pid,project] of Object.entries(projects)){
             const projectUpdate={
                 rn: project.rn
@@ -55,7 +56,7 @@ async function main(){
         }
     } catch(err){
         console.error(err);
-        console.error('Error running user info script');
+        console.error('Error running rate asset script');
         process.exit(1)
     }
     process.exit(0);

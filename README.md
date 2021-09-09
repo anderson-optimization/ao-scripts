@@ -53,3 +53,22 @@ Commands:
 npm run user-info
 npm run fetch-projects
 ```
+### Rate an asset in a project programmatically
+```
+# Find an asset rn (you can get one easily by using the url)
+# example assetrn=team/<tid>/asset/<id>
+
+# Usage
+# node src/rate-asset-in-all-projects.js <rn> <rating>
+node src/rate-asset-in-all-projects.js team/<tid>/asset/<id> 1
+
+# Output
+Searching all projects in current team=<tid> for assetRn=team/<tid>/asset/<aid>
+Found asset in project team/<tid>/project/<pid> at step/land/asset/land/<aid> currentRating=2
+Updating project!!! {
+  rn: 'team/<tid>/project/<pid>',
+  'step/land/asset/land/<id>/rating': '1'
+}
+
+# Use UI to confirm it change
+```
