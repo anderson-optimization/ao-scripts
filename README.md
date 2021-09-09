@@ -1,8 +1,11 @@
 
 
-# Ao Cli
+# AO Scripts
 
-`ao-cli` is used to authenticate programmatic access to our app and delegate those permissions to things such as node/js scripts.
+AO Scripts is a starter repo to help utilize `ao-lib` and `ao-cli` for programmatic access to AO resources.  
+
+- `ao-cli` is used to authenticate programmatic access to our app and delegate those permissions to things such as node/js scripts.  
+- `ao-lib` is a js sdk to interact with AO resources in a structured way and is what powers most of AO's frontend and backend.
 
 ## Setup
 
