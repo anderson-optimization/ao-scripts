@@ -13,7 +13,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@anderson-optimization/ao-cli": "file:anderson-optimization-ao-cli-1.0.3.tgz",
+    "@anderson-optimization/ao-cli": "file:anderson-optimization-ao-cli-1.0.4.tgz",
     "@anderson-optimization/ao-lib": "file:anderson-optimization-ao-lib-2.0.4.tgz",
     "lodash": "^4.17.21"
   }

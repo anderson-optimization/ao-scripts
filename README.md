@@ -17,8 +17,12 @@ node -v
 
 - Install libraries
 ```
+# Make sure library files are in the same directory
+npm install
+
+# If you are installing different versions, you might have to
 npm install --save anderson-optimization-ao-lib-v2-0-4.tgz
-npm install --save anderson-optimization-ao-cli-v2-0-4.tgz
+npm install --save anderson-optimization-ao-cli-v1-0-4.tgz
 ```
 
 - Test install
@@ -49,6 +53,30 @@ Commands:
 
 ## Examples
 
+### Login
+This needs to be run before you can access AO resources
+```
+npm run login
+
+# output
+Ao file doesn't exists
+CLI Login initiated
+Begin login pipeline { auth0: true, firebase: true }
+User not logged in
+Unable to fetch aoLib, likely not logged in
+Login in at <url>
+
+# Web browser should open, login with your user credentials
+# After login, terminal will show
+
+Retrieved login code
+Requesting auth0 token
+GetFirebaseToken
+Firebase login succeeded.
+Login finished, stored token at <local-path>
+```
+
+### Basic info scripts
 ```
 npm run user-info
 npm run fetch-projects
