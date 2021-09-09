@@ -121,3 +121,7 @@ Updating project!!! {
 
 # Use UI to confirm it change
 ```
+
+## AoLib
+
+The aoLib class documentation can be found [here](https://s3.us-west-2.amazonaws.com/docs.andersonopt.com/ao-lib/2.0.4/classes/ao.html)
