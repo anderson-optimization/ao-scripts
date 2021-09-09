@@ -6,18 +6,34 @@
 
 ## Setup
 
-- Install [node](https://nodejs.org/en/download/) version 14.x.y.  We use [nvm](https://github.com/nvm-sh/nvm) to manage node versions.
+### Install Node
+
+Install [node](https://nodejs.org/en/download/) version 14.x.y.  We use [nvm](https://github.com/nvm-sh/nvm) to manage node versions.
 
 Test in command line
 ```
 node -v
 ```
 
-- Get libraries from AO contact.  You should receive `ao-lib-v...` and `ao-cli-v...`
+### Clone Repo, Get Libraries
 
-- Install libraries
+
+
 ```
-# Make sure library files are in the same directory
+# go to wherever you want to store this code
+cd $HOME  
+
+# clone our starter repo
+git clone https://github.com/anderson-optimization/ao-scripts
+
+```
+
+#### Get libraries from AO contact
+
+- You should receive `ao-lib-v...` and `ao-cli-v...`
+
+```
+# Make sure library files you received are in the same directory
 npm install
 
 # If you are installing different versions, you might have to
@@ -25,7 +41,8 @@ npm install --save anderson-optimization-ao-lib-v2-0-4.tgz
 npm install --save anderson-optimization-ao-cli-v1-0-4.tgz
 ```
 
-- Test install
+### Test Install
+
 ```
 npm run help
 
