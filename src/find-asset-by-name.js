@@ -47,7 +47,7 @@ async function main() {
             process.exit(0);
         }
         for (let [id,asset] of Object.entries(assets)){
-            console.log(asset.parameter.name.name);
+            console.log(`Match: ${asset.parameter.name.name}`);
         }
     } catch (err) {
         console.error(err);
