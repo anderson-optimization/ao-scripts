@@ -97,12 +97,40 @@ Firebase login succeeded.
 Login finished, stored token at <local-path>
 ```
 
-### Basic info scripts
+### Scripts
+
+#### See basic user info
 ```
 npm run user-info
-npm run fetch-projects
+
+# Output 
+My user id is: <uid>
+My user state is: <big object...>
+
+I am a member of 216 teams
+Team Alabama with 1 members
+Team Alberta with 4 members
+...
+
 ```
-### Rate an asset in a project programmatically
+
+#### Fetch a list of projects
+```
+npm run fetch-projects
+
+# Output
+
+team/<tid>/project/-MfiWs9PcKQRRqVipjgq: ol performance - undefined
+
+Parcel team/<tid>/asset/rau_AAAft2xGjlSL9WGC is 4.24m from CRIPPLE CREEK - 69kV
+Bureau Of Land Management - 113.44
+
+Parcel team/<tid>/asset/rau_AAAft3rzfNcOCZmA is 5.19m from CRIPPLE CREEK - 69kV
+Cripple Creek Victor  [...] - 207.18
+
+```
+
+#### Rate an asset in a project programmatically
 ```
 # Find an asset rn (you can get one easily by using the url)
 # example assetrn=team/<tid>/asset/<aid>
@@ -122,6 +150,23 @@ Updating project!!! {
 # Use UI to confirm it change
 ```
 
-## AoLib
+#### Find asset by name
+
+This currently uses a prefix match. You can also do exact matching.
+
+```
+node src/find-asset-by-name.js T
+
+# output, returns all assets starting with capital T
+searching for  T
+Match: TAP138774 - 34.5kV
+Match: TAP138828 - 34.5kV
+...
+```
+
+
+## Reference
+
+### AoLib
 
 The aoLib class documentation can be found [here](https://s3.us-west-2.amazonaws.com/docs.andersonopt.com/ao-lib/2.0.4/classes/ao.html)
