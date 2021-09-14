@@ -42,7 +42,7 @@ npm install
 
 # If you are installing different versions, you might have to
 npm install --save anderson-optimization-ao-lib-2.0.4.tgz
-npm install --save anderson-optimization-ao-cli-1.0.4.tgz
+npm install --save anderson-optimization-ao-cli-1.0.6.tgz
 ```
 
 ### Test Install
