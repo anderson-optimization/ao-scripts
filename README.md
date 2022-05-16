@@ -165,6 +165,34 @@ Match: TAP138828 - 34.5kV
 ```
 
 
+#### Update Asset Site Control
+
+```
+node src/update-site-control.js <asset-rn>
+
+# Response
+Fetched team/ao-mn/asset/ra_27083_07-016003-0_398_94, preparing to update
+undefined is not an allowed status [
+  'Full Site Control',
+  'Offer Accepted',
+  'Offer Delivered',
+  'Target',
+  'Inactive',
+  'Terminated'
+]
+
+# Update With Value
+ node src/update-site-control.js <asset-rn> "Full Site Control"
+
+# Response
+ Fetched team/ao-mn/asset/ra_27083_07-016003-0_398_94, preparing to update
+Performing multipath update {
+  rn: 'team/ao-mn/asset/ra_27083_07-016003-0_398_94',
+  'parameter/land/sitecontrolstatus': 'Full Site Control'
+}
+Confirming database value for parameter.land.sitecontrolstatus=Full Site Control
+```
+
 ## Reference
 
 ### AoLib
